@@ -2,21 +2,16 @@ name: rastermap
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python<3.10
   - pip
-  - numpy
-  - numba
+  - numpy>=1.16
+  - numba>=0.43.1
   - matplotlib
   - scipy
   - scikit-learn
-  - pyqt
-  - opencv
-  - ipykernel
-  - ipython
-  - pandas
-  - pytables
+  - pyqt<=5.11.3
   - pyqtgraph
+  - h5py<3
   - natsort
   - pip:
     - scanimage-tiff-reader
-    - rastermap
