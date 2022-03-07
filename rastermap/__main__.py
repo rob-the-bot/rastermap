@@ -33,7 +33,6 @@ if __name__ == '__main__':
         print(S.shape)
         if len(S.shape) > 2:
             S = S.mean(axis=-1)
-        S = zscore(S,axis=1)
         ops['mode'] = 'basic'
         model = Rastermap(n_components=ops['n_components'], n_X=ops['n_X'], nPC=ops['nPC'],
                           init=ops['init'], alpha=ops['alpha'], K=ops['K'], constraints=ops['constraints'],
